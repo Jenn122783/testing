@@ -1,0 +1,424 @@
+/* -----GLOBAL STYLES----- */
+
+body {
+    position: relative; 
+    font-family: 'Josefin Sans', sans-serif;
+    overflow-y: scroll;
+  }
+
+h2, h3 {
+    font-family: Helvetica ,san-serif;
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 4em;
+    line-height: 1.2656em;
+    margin-top: 0.4219em;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 1.25em;
+    letter-spacing: 2px;
+    line-height: 1.2558em;
+    margin: 0.4219em auto 0.4219em auto;
+}
+
+h3 {
+    font-size: 1.5263em;
+    letter-spacing: 2px;
+    line-height: 1.8621em;
+    margin-top: 0.4em;
+    margin-bottom: 0;
+}
+
+h4 {
+    color: deeppink;
+    margin-left: 35px;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+h5 {
+    color: deeppink;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.4211em;
+    margin-top: 1.4211em;
+    margin-bottom: 15px;
+    font-weight: 100; 
+}
+
+hr {
+    margin-top: 20px;
+}
+
+/* -----END GLOBAL STYLES----- */
+
+
+/* -----NAVBAR STYLES----- */
+
+.navbar-default {
+    border: none;
+    background-color: #f1f1f1;  
+    padding: 0 15px; 
+    box-shadow: #777 .5px .5px 7px;
+    opacity: 0.98; 
+}
+
+.navbar-default .navbar-nav>.active>a {
+    background-color: #f1f1f1;
+    color: deeppink;
+    border-bottom: 2px deeppink solid;   
+}
+
+.navbar-default .navbar-brand {
+    color: deeppink !important;
+}
+
+
+/* -----END NAVBAR STYLES----- */
+
+
+/* -----INTRO SECTION STYLES----- */
+
+#intro {
+    background-color: #222;
+    width: 100%;
+    height: 715px;
+    background-image: url(../images/portfolio.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-end; 
+}
+
+@media (max-width: 1024px) {
+    #intro {
+        background-attachment: scroll; 
+    }
+}
+
+#intro .name {
+    width: 100%; 
+    height: auto; 
+    color: #f1f1f1;
+    padding-left: 3%; 
+}
+
+#intro .name span {
+    color: deeppink; 
+}
+
+#intro .down-button { 
+    margin: 230px 0 40px 0; 
+    color: #f1f1f1;  
+    justify-content: center; 
+    align-self: center; 
+}
+
+#intro .down-button i:hover, 
+#intro .down-button:hover {
+    color: deeppink;
+    transition: color 0.3s ease-in-out;
+}
+
+#intro .down-button i:visited, 
+#intro .down-button:visited {
+    color: #f1f1f1;
+    transition: color 0.3s ease-in-out;
+}
+
+/* -----END INTRO SECTION STYLES----- */
+
+
+/* -----PROFILE SECTION STYLES----- */
+
+#profile {
+    background-color: #0101;
+    height: auto; 
+    padding-top: 30px; 
+}
+
+.profile-copy ul {
+    margin-left: 50px;
+}
+
+.profile-copy li::before {
+    content: "•";
+    color: deeppink;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em   
+}
+
+.profile_image {
+    border-top-left-radius: 400px;
+    border-top-right-radius: 400px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 400px;
+}
+
+#profile span {
+    color: #999; 
+}
+
+#profile article {
+    margin: 3% 2%;
+}
+
+#profile .down-button {  
+    color: #999 !important;
+    margin-top: -15px; 
+    opacity: 0.2;
+}
+
+#profile .down-button i:hover, 
+#profile .down-button:hover {
+    color: deeppink;
+    transition: color 0.3s ease-in-out;
+    opacity: 0.9; 
+}
+
+#profile .down-button i:visited, 
+#profile .down-button:visited {
+    color: #999;
+    transition: color 0.3s ease-in-out;
+}
+
+/* -----END PROFILE SECTION STYLES----- */
+
+
+/* -----PORTFOLIO SECTION STYLES----- */
+
+#portfolio {
+    width: 100%;
+    height: auto; 
+    padding: 75px 45px; 
+    background-color: #222; 
+    /* background-image: url(../images/High-Quality-Dark-Background-Images-.jpg); */
+    /* background-image: url(../images/dark-desk-background-dark.jpg); */
+    background-image: url(../images/DeskTop.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column; 
+}
+
+@media (max-width: 1024px) {
+    #portfolio {
+        background-attachment: scroll; 
+    }
+}
+
+.panel-default>.panel-heading {
+    background-color: #f1f1f1;
+    border: none;
+}
+
+.panel-heading {
+    padding-left: 0; 
+}
+
+.panel-heading a {
+    text-decoration: none; 
+    text-align: center;
+}
+
+.panel-heading a:hover, 
+.panel-heading a:active {
+    color: deeppink;
+    transition: color 0.3s ease-in-out;
+}
+
+.panel-group .panel-heading+.panel-collapse>.panel-body {
+    border-top: none; 
+    background: rgba(241, 241, 241); 
+}
+
+.panel-body p a {
+    text-decoration: none; 
+    color: deeppink;
+    font-size: 1.1em; 
+}
+
+.panel-body p a:hover {
+    font-weight: 600;  
+}
+
+.panel-body {
+    width: 100%; 
+    height: auto;
+    padding: 10px 25px; 
+    display: flex; 
+    flex-wrap: nowrap; 
+    flex-direction: row;
+    align-items: center;  
+}
+
+@media (max-width: 970px) {
+    .panel-body {
+        flex-direction: column; 
+    }
+}
+
+@media (max-width: 970px) {
+    #collapseTwo .panel-body, 
+    #collapseFour .panel-body {
+       flex-direction: column-reverse; 
+    }
+}
+#portfolio .thumbnail {
+    border: none; 
+    margin: 0 15px;   
+}
+
+#portfolio span {
+    color: deeppink; 
+}
+
+#portfolio .down-button {  
+    color: #f1f1f1;  
+    justify-content: center; 
+    align-self: center; 
+    margin-top: 45px; 
+}
+
+#portfolio .down-button i:hover, 
+#portfolio .down-button:hover {
+    color: deeppink;
+    transition: color 0.3s ease-in-out;
+}
+
+#portfolio .down-button i:visited, 
+#portfolio .down-button:visited {
+    color: #f1f1f1;
+    transition: color 0.3s ease-in-out;
+}
+
+/* -----END PORTFOLIO SECTION STYLES----- */
+
+
+/* -----CONTACT SECTION STYLES----- */
+
+#contact {
+    width: 100%;
+    padding: 2%; 
+    background-color:#f1f1f1;
+}
+
+form {
+    width: 100%;
+}
+
+.form_container {
+     margin: 0 2%;
+}
+
+fieldset {
+    border: medium none !important;
+    width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact textarea:hover {
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid;
+    box-shadow: lightgray 0 1px 1px 1px;
+    border-color: deeppink;
+}
+
+#contact textarea {
+    height: 150px;
+    resize: none;
+}
+
+#contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: #666;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 15px;
+    font-size: 16px;
+}
+
+#contact button[type="submit"]:hover {
+    color: deeppink;
+    background-color: #0101; 
+    transition: background-color 0.3s ease-in-out; 
+}
+
+.disclaimer {
+    text-align: center;
+    font-style: italic;
+    color: #999;
+    font-size: 12px;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid deeppink;
+}
+
+.contact_email {
+    color: deeppink;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+/* -----END CONTACT SECTION STYLES----- */
+
+
+/* -----FOOTER STYLES----- */
+
+footer {
+    background-color: #555; 
+    height: auto; 
+}
+
+footer .social { 
+    margin: 25px 5px 5px 5px; ;
+    padding: 0;  
+}
+
+footer .social:hover { 
+    border-radius: 0;
+    border-bottom: 1.5px solid deeppink;
+    transition: border 0.6s ease-in-out;
+}
+
+footer p {
+    margin: 12px 0 20px 0;
+    color: #999; 
+    letter-spacing: 2px; 
+    font-size: .75em;        
+}
+
+footer span {
+    color: deeppink; 
+}
+/* -----END FOOTER SECTION STYLES----- */
